@@ -22,27 +22,26 @@ public class Main {
         switch (answer) {
             case 1:
                 // standard
-                Deck d1 = new Deck(1);
+                deck = new Deck(1);
                 System.out.println("Your deck is: ");
-                d1.printDeck();
+                deck.printDeck();
                 break;
             case 2:
                 // standard - {8, 9}
-                Deck d2 = new Deck(2);
+                deck = new Deck(2);
                 System.out.println("Your deck is: ");
-                d2.printDeck();
+                deck.printDeck();
                 break;
             case 3:
                 // customizable
                 System.out.print("Which are the numbers you don't want to appear in your deck?: ");
                 String numbersToDelete = sc.next();
-                Deck d3 = new Deck(numbersToDelete);
+                deck = new Deck(numbersToDelete);
                 System.out.println("Your deck is: ");
-                d3.printDeck();
+                deck.printDeck();
                 break;
         }
-
-        // why i can't work with d1/d2/d3...?¿
+        
 
     }
 }
