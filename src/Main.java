@@ -41,7 +41,6 @@ public class Main {
                 deck.printDeck();
                 break;
         }
-        
 
     }
 }
